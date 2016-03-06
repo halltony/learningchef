@@ -9,7 +9,7 @@ platforms:
   - name: centos65
     driver:
       box: learningchef/centos65
-      box_url: learningchef/centos65
+      box_url: learningchef/centos65upuo
 
 suites:
   - name: default
