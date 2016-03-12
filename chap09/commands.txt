@@ -1,0 +1,5 @@
+sudo chef-server-ctl user-create halltony Tony Hall ajhall42@gmail.com chefrocks --filename halltony.pem
+sudo chef-server-ctl org-create learningchef "Learning Chef" --association halltony --filename learningchef-validator.pem
+vagrant scp 13de785:/home/vagrant/halltony.pem ./halltony.pem
+vagrant scp 13de785:/home/vagrant/learningchef-validator.pem learningchef-validator.pem
+cd /Users/Tony/learningchef/chap09/chef-repo/cookbooks/chef-server/.kitchen/kitchen-vagrant/kitchen-chef-server-server-centos65 
